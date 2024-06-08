@@ -1,0 +1,58 @@
+.main-inf {
+  display: flex;
+  justify-content: center;
+  // gap: 28px;
+  // margin-left: 100px;
+
+  &__main-text {
+    padding-top: 40px;
+    display: block;
+    // text-align: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      // max-width: 260px;
+      font-weight: 500;
+      font-size: 34px;
+      padding-left: 0px;
+      // margin: 0 auto;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 150px;
+    }
+  }
+  &__text-inf {
+    color: var(--color-primary-dblue);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    width: 700px;
+    &-beautyzone {
+      color: var(--color-primary-dblue, #011c44);
+      font-weight: 600;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      width: 320px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.grad2 {
+  position: relative;
+}
+.grad2 img {
+  display: flex;
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
+
+  @media screen and (min-width: $bp-desktop) {
+    position: absolute;
+    z-index: -1;
+    top: -190px;
+  }
+}

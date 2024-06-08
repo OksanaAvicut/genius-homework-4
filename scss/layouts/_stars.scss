@@ -1,0 +1,41 @@
+.star1 {
+  position: relative;
+  right: 550px;
+  top: 380px;
+  animation-name: spin-star;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-shrink: 0;
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.star2 {
+  position: relative;
+  right: 50px;
+  animation-name: spin-star;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-shrink: 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.star3 {
+  position: relative;
+  top: 300px;
+  right: 200px;
+  animation-name: spin-star;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-shrink: 0;
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+}

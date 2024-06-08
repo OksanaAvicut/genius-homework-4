@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #ffffff;
+  border-radius: 32px;
+  background-color: var(--color-primary-blue);
+  padding: 16px 32px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  border: 2px solid #2b7fff;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  font-weight: 600;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &:hover {
+    padding: 16px 32px;
+    gap: 10px;
+    border-radius: 32px;
+    border: 2px solid #2b7fff;
+    cursor: pointer;
+    color: #011c44;
+    background-color: #fff;
+    font-weight: 600;
+  }
+}
+
+.form-button {
+  margin: 0 auto;
+  display: block;
+}
